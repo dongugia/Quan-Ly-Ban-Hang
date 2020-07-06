@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74123025-3B47-4160-837F-9590CD0E2CC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quan_Ly_Ban_Hang</RootNamespace>
+    <AssemblyName>Quan Ly Ban Hang</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanHangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BanHangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BanHangDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BanHangDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BanHangDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BanHangDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BanHangDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BanHangDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danh muc khach hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danh muc khach hang.Designer.cs">
+      <DependentUpon>Danh muc khach hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDM\QL DM Khach Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLDM\QL DM Khach Hang.Designer.cs">
+      <DependentUpon>QL DM Khach Hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLDM\QL DM Nhan Vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLDM\QL DM Nhan Vien.Designer.cs">
+      <DependentUpon>QL DM Nhan Vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLDM\QL DM San Pham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLDM\QL DM San Pham.Designer.cs">
+      <DependentUpon>QL DM San Pham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLDM\QL DM Thanh Pho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLDM\QL DM Thanh Pho.Designer.cs">
+      <DependentUpon>QL DM Thanh Pho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLDM\QL_DM_Hoa Don.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLDM\QL_DM_Hoa Don.Designer.cs">
+      <DependentUpon>QL_DM_Hoa Don.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tao Tai Khoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tao Tai Khoan.Designer.cs">
+      <DependentUpon>Tao Tai Khoan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danh muc khach hang.resx">
+      <DependentUpon>Danh muc khach hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QLDM\QL DM Khach Hang.resx">
+      <DependentUpon>QL DM Khach Hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLDM\QL DM Nhan Vien.resx">
+      <DependentUpon>QL DM Nhan Vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLDM\QL DM San Pham.resx">
+      <DependentUpon>QL DM San Pham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLDM\QL DM Thanh Pho.resx">
+      <DependentUpon>QL DM Thanh Pho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLDM\QL_DM_Hoa Don.resx">
+      <DependentUpon>QL_DM_Hoa Don.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tao Tai Khoan.resx">
+      <DependentUpon>Tao Tai Khoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BanHangDataSet.xsc">
+      <DependentUpon>BanHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BanHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BanHangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BanHangDataSet.xss">
+      <DependentUpon>BanHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BanHangDataSet1.xsc">
+      <DependentUpon>BanHangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BanHangDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BanHangDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BanHangDataSet1.xss">
+      <DependentUpon>BanHangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BanHangDataSet2.xsc">
+      <DependentUpon>BanHangDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BanHangDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BanHangDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BanHangDataSet2.xss">
+      <DependentUpon>BanHangDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BanHangDataSet3.xsc">
+      <DependentUpon>BanHangDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BanHangDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BanHangDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BanHangDataSet3.xss">
+      <DependentUpon>BanHangDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
